@@ -1,0 +1,7 @@
+#logoLoading {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 30px;
+    
+}
