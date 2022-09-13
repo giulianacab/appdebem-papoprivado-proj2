@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : NOTE-VINICIUS
+    * @group            : 
+    * @created          : 13/09/2022 - 19:18:22
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 13/09/2022
+    * - Author          : NOTE-VINICIUS
+    * - Modification    : 
+**/
 const usersList = [
   {
   username: 'teste1',
