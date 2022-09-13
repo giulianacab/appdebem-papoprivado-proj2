@@ -1,7 +1,29 @@
 #logoLoading {
+    position: fixed;
     display: flex;
-    position: absolute;
-    flex-direction: column;
-    width: 30px;
+    flex-direction:column;
+    align-content: center;
+
+    width: 300px;
+    padding: 30px;
     
+}
+
+.footer {
+    position: fixed;
+    display: flex;
+    flex-direction: center;
+    
+}
+
+p {
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    align-content:flex-end;
+
+    padding: 20%;
+
+    color: white;
+    font-size: 12px;
 }

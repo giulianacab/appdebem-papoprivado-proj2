@@ -1,6 +1,7 @@
 // Tela de cadastro completo
 import { useState } from "react";
 import { Form } from "../3.1 Sign Up";
+import './style.module.css';
 
 
 export function SignUp () {
