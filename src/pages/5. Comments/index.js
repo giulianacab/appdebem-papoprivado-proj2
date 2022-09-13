@@ -2,7 +2,7 @@
     * @description      : 
     * @author           : NOTE-VINICIUS
     * @group            : 
-    * @created          : 13/09/2022 - 18:54:12
+    * @created          : 13/09/2022 - 18:56:04
     * 
     * MODIFICATION LOG
     * - Version         : 1.0.0
@@ -12,9 +12,23 @@
 **/
 import './style.module.css';
 import {Form} from "../../Form/index"   
+import { useState } from 'react';
+import usersList  from '../../data';
 
 
-export function PrivateTalk () {
+export function Comments() {
+
+  const [userList, setUsersList] = useState(
+    usersList.map((currentUser) => {
+      return {
+        username: currentUser.username       
+      };
+    })
+  );
+
+  const [form, setForm] = useState({
+    comment: ""
+  });
     return (
         <>
         <div className='headerTop'>
@@ -29,9 +43,12 @@ export function PrivateTalk () {
         </div>
 
 
-        <div className='body'>
-Colocar cards apenas com foto e título
-        </div>
+        <Form
+            form={form}
+            setForm={setForm}
+            setUsersList={setUsersList}
+            usersList={usersList}
+            />
 
 
         <div className='navbar'>
