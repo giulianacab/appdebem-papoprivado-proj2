@@ -40,13 +40,11 @@ export function PrivateTalk () {
 
 
 {/* CARDS */}
-        <body>
             <section>
                 <div className={style.body}>
                     <Communities />
                 </div>
             </section>
-        </body>
 
 
 {/* NAVBAR */}
