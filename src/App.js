@@ -17,11 +17,11 @@ import { Form } from "./pages/3.1 Sign Up";
 import { SignUp } from "./pages/3.2 Sign Up";
 import { PrivateTalk } from "./pages/4. Private Talk";
 import { Comments } from "./pages/5. Comments";
-import HeaderTop from "./components/HeaderTop";
-import Header from "./components/Header";
-import Body from "./components/Body";
-import Navbar from "./components/Navbar";
-import { Communities } from "./components/Communities";
+// import HeaderTop from "./components/HeaderTop";
+// import Header from "./components/Header";
+// import Body from "./components/Body";
+// import Navbar from "./components/Navbar";
+// import { Communities } from "./components/Communities";
 
 export default function App() {
     return (

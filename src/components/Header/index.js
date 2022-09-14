@@ -5,8 +5,8 @@ export default function Header () {
     return (
         <header>
             <img src='/' id='profilePic'></img>
-            <h3 classNameName='openWindow'></h3>
-            <p classNameName='nameAndLastName'></p>
+            <h3 className='openWindow'></h3>
+            <p className='nameAndLastName'></p>
         </header>
     )
 }
