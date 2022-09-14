@@ -17,18 +17,18 @@ export function Login() {
     return (
         <>
 
-        <div className="header">
+        <div className={style.header}>
             <img src="/" className="logo"/>
         </div>
 
-        <div className="login-form">
+        <div className={style.loginForm}>
             <h3>Faça seu login</h3>
             {/* <FormLogin /> */}
-            <p className="register">Ainda não é cadastrada? Clique aqui</p>
+            <p className={style.register}>Ainda não é cadastrada? Clique aqui</p>
         </div>
 
-        <div className="footer">
-            <p className='footer-text'>
+        <div className={style.footer}>
+            <p className={style.footer-text}>
                 Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
             </p>
         </div>
