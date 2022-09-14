@@ -10,12 +10,16 @@
     * - Author          : NOTE-VINICIUS
     * - Modification    : 
 **/
-import "./style.module.css";
-// import { FormLogin } from '../../FormLogin'
+import { useState } from "react";
+import { Form } from "../../Form";
+import style from"./style.module.css";
 
 export function Login() {
+    const [form, setForm] = useState({});
+
+
     return (
-        <>
+        <>    
 
         <div className={style.header}>
             <img src="/" className="logo"/>
@@ -24,11 +28,23 @@ export function Login() {
         <div className={style.loginForm}>
             <h3>Faça seu login</h3>
             {/* <FormLogin /> */}
-            <p className={style.register}>Ainda não é cadastrada? Clique aqui</p>
+
+            <form>
+      <label htmlFor="comment">Email</label>
+      <input/>     
+    </form>
+
+    <form>
+      <label htmlFor="comment">Senha</label>
+      <input/>     
+    </form>
+
+    <button navigate={"/loading"}>Entrar</button>
+            <p className="register">Ainda não é cadastrada? Clique aqui</p>
         </div>
 
         <div className={style.footer}>
-            <p className={style.footer-text}>
+            <p className={style.footerText}>
                 Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
             </p>
         </div>
