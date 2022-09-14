@@ -5,14 +5,14 @@
 
 .logo {
     position: relative;
-    top:0%;
-    transform: translateY(50%);
+    transform: translateY(-70%);
     background-color: #FF6648;
 
     left: 0;
     right: 0;
+    top: 0;
 
-    width: 100px;
+    width: 120px;
 }
 
 .body {
@@ -26,6 +26,7 @@
 }
 
 .loginForm {
+    max-width: 200px;
 
 }
 
@@ -44,13 +45,29 @@ h3 {
     
     padding-top: 30px;
     padding-bottom: 10px;
+}
 
-    
+.placeholder {
+    font-family: 'Paytone', 'Gill Sans', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: rgb(126, 126, 126);
+
+    background-color: white;
+    border-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+
+    padding:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .register {
     display: flex;
     position: absolute;
+    width: 100%;
 
     background-color: #ff6648;
 
@@ -62,18 +79,18 @@ h3 {
 
 button {
     padding:10px;
-    padding-left: 50%;
-    padding-right: 50%;
     margin-bottom: 30px;
+    width: 100%;
 
-    background-color: white;
-    border-color: rgb(126, 126, 126);
+    background-color: #FF94AE;
+    border-color: #FF94AE;
     border-width: 1px;
     border-radius: 20px;
     border-style: solid;
 
     font-family: 'Paytone', 'Gill Sans', 'Gill Sans', 'Gill Sans MT', sans-serif;
-    color: rgb(126, 126, 126);
+    font-weight:600;
+    color: rgb(53, 53, 53);
 }
 
 .footer {

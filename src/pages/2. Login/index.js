@@ -22,25 +22,25 @@ export function Login() {
         <>    
         <div className={style.body}>
             <div className={style.header}>
-                <img src="src/Logos/logo laranja.png" className={style.logo}/>
+                <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" className={style.logo}/>
             </div>
 
             <div className={style.loginForm}>
                 <h3>Faça seu login</h3>
                 {/* <FormLogin /> */}
 
-            <form>
-                <label htmlFor="comment" className={style.label}>E-mail: </label>
-                <input/>     
-            </form>
+                <form>
+                    <label htmlFor="comment" className={style.label}></label>
+                    <input placeholder="E-mail" className={style.placeholder}/>     
+                </form>
 
-            <form>
-                <label htmlFor="comment" className={style.label}>Senha: </label>
-                <input/>     
-            </form>
+                <form>
+                    <label htmlFor="comment" className={style.label}></label>
+                    <input placeholder="Senha" className={style.placeholder}/>     
+                </form>
 
-            <button navigate={"/loading"}>Entrar!</button>
-                <p className={style.register}>Ainda não é cadastrada? Clique aqui</p>
+                <button navigate={"/loading"}>ENTRAR!</button>
+                    <p className={style.register}>Ainda não é cadastrada? Clique aqui</p>
             </div>
         </div>
 
