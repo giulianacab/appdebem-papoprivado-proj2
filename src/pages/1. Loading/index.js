@@ -1,19 +1,23 @@
-import './style.module.css';
+import style from './style.module.css';
 
 
 export function Loading () {
     return (
         <>
-            <div className='page-loading'>
+        <body>
+            <div className={style.pageLoading}>
                 <div>
-                    <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" className='logo-loading'/>
+                    <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" className={style.logoLoading}/>
                 </div>
 
-                <div className='footer'>
-                    <p className='footerText'>
+
+                <div className={style.footer}>
+                    <p className={style.footerText}>
                         Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
                     </p>
                 </div>
             </div>
+        </body>
+
         </>
 )};
