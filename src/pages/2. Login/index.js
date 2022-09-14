@@ -11,5 +11,27 @@
     * - Modification    : 
 **/
 import "./style.module.css";
+// import { FormLogin } from '../../FormLogin'
 
-export function Login() {}
+export function Login() {
+    return (
+        <>
+
+        <div className="header">
+            <img src="/" className="logo"/>
+        </div>
+
+        <div className="login-form">
+            <h3>Faça seu login</h3>
+            {/* <FormLogin /> */}
+            <p className="register">Ainda não é cadastrada? Clique aqui</p>
+        </div>
+
+        <div className="footer">
+            <p className='footer-text'>
+                Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
+            </p>
+        </div>
+        </>
+    )
+}

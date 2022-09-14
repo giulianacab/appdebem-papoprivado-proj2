@@ -1,4 +1,20 @@
-.card-deck {
-    background-color: #FF6648;
+.cardDeck {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding: 30px;
+    background-color: #ffffff;
 
+}
+
+.cardBody {
+    min-width: 100px;
+    margin: 30px;
+    border-color: #FFD110;
+    border:10px;
+    border-radius: 20px;
+}
+
+.cardTitle {
+    
 }
