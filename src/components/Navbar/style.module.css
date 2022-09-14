@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    position: absolute;
+    align-items:flex-end;
+    align-content: space-around;
+
+    background-color: #FF94AE;
+    padding: 20px;
+}

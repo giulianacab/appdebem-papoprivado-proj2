@@ -31,15 +31,15 @@ export function Comments() {
   });
     return (
         <>
-        <div className='headerTop'>
+        <div classNameName='headerTop'>
             <img src='/' id='iconConfig'></img>
         </div>
 
 
-        <div className='header'>
+        <div classNameName='header'>
             <img src='/' id='profilePic'></img>
-            <h3 className='openWindow'></h3>
-            <p className='nameAndLastName'></p>
+            <h3 classNameName='openWindow'></h3>
+            <p classNameName='nameAndLastName'></p>
         </div>
 
 
@@ -51,7 +51,7 @@ export function Comments() {
             />
 
 
-        <div className='navbar'>
+        <div classNameName='navbar'>
             <img src='/' id='icon1'></img>
             <img src='/' id='icon2'></img>
             <img src='/' id='icon3'></img>

@@ -37,13 +37,13 @@ export function Form(props) {
         value={form.comment}
         onChange={handleChange}
       />
-      <button onClick={handleAddComment} className="btn btn-primary">
+      <button onClick={handleAddComment} classNameName="btn btn-primary">
         Comentar
       </button>
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" classNameName="btn btn-primary">
         Editar
       </button>
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" classNameName="btn btn-primary">
         Deletar
       </button>
     </form>
