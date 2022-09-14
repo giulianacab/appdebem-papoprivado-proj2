@@ -1,31 +1,42 @@
-.page-loading {
-    background-color: #FF6648;
-}
-
-.logo-loading {
+body {
     display: flex;
-    position: fixed;
     align-content: center;
     justify-content: center;
 
+    background-color: #FF6648;
+}
 
-    width: 300px;
-    padding: 30px;
-    
+.logoLoading {
+    position: relative;
+    top:50%;
+    transform: translateY(100%);
+    background-color: #FF6648;
+
+    left: 0;
+    right: 0;
+
+    width: 350px;
 }
 
 .footer {
-    position: fixed;
     display: flex;
-    flex-direction: center;
-    
-}
-
-p {
     position: fixed;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
 
-    color: rgb(67, 67, 67);
+    background-color: #FF6648;
+}
+
+.footerText {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+
+    background-color: #FF6648;
+
+    color: rgb(255, 255, 255);
     font-size: 12px;
 }

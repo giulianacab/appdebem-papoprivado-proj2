@@ -12,7 +12,7 @@
 **/
 import { useState } from "react";
 import { Form } from "../../Form";
-import "./style.module.css";
+import style from"./style.module.css";
 
 export function Login() {
     const [form, setForm] = useState({});
@@ -21,11 +21,11 @@ export function Login() {
     return (
         <>    
 
-        <div className="header">
+        <div className={style.header}>
             <img src="/" className="logo"/>
         </div>
 
-        <div className="login-form">
+        <div className={style.loginForm}>
             <h3>Faça seu login</h3>
             {/* <FormLogin /> */}
 
@@ -39,12 +39,12 @@ export function Login() {
       <input/>     
     </form>
 
-    <button>Entrar</button>
+    <button navigate={"/loading"}>Entrar</button>
             <p className="register">Ainda não é cadastrada? Clique aqui</p>
         </div>
 
-        <div className="footer">
-            <p className='footer-text'>
+        <div className={style.footer}>
+            <p className={style.footerText}>
                 Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
             </p>
         </div>
