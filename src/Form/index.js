@@ -37,15 +37,33 @@ export function Form(props) {
         value={form.comment}
         onChange={handleChange}
       />
-      <button onClick={handleAddComment} classNameName="btn btn-primary">
-        Comentar
-      </button>
-      <button type="submit" classNameName="btn btn-primary">
-        Editar
-      </button>
-      <button type="submit" classNameName="btn btn-primary">
-        Deletar
-      </button>
+
+    
+        <button onClick={handleAddComment} className="btn btn-primary">
+          Comentar
+        </button>
+
     </form>
   );
 }
+
+
+
+
+// useEffect(() => {
+//   async function fetchTips() {
+//     try {
+//       const response = await axios({method: "post",
+//         url: "https://ironrest.herokuapp.com/irontips", 
+//         data: {  username : "teste1",
+//         comment : "Teste"}
+//       }
+//       );
+
+//       setTips([...response.data]);
+//     } catch (err) {
+//       console.log(err);
+//     }
+//   }
+//   fetchTips();
+// }, []);
