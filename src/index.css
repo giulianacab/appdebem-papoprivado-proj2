@@ -1,13 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
 
-  background-color: #ff6648;
-  color: white;
-  position: relative;
+  /* background-color: #ff6648; */
+  color: rgb(108, 108, 108);
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+
 }
 
