@@ -1,27 +1,102 @@
 .header {
     background-color: #ff6648;
+    height: 150px;
 }
 
 .logo {
+    position: relative;
+    top:0%;
+    transform: translateY(50%);
+    background-color: #FF6648;
 
+    left: 0;
+    right: 0;
+
+    width: 100px;
 }
 
-.login-form {
+.body {
+    position: relative;
+    top:0%;
+    transform: translateY(40%);
+    background-color: #FF6648;
+
+    left: 0;
+    right: 0;
+}
+
+.loginForm {
 
 }
 
 h3 {
     background-color: #ff6648;
+    font-family: 'Paytone', 'Gill Sans', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    font-weight: bold;
+    color: white;
+
+    padding-bottom: 15px;
+}
+
+.label {
+    font-family: 'Paytone', 'Gill Sans', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: white;
+    
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    
 }
 
 .register {
+    display: flex;
+    position: absolute;
+
     background-color: #ff6648;
+
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    padding:10px;
+    padding-left: 50%;
+    padding-right: 50%;
+    margin-bottom: 30px;
+
+    background-color: white;
+    border-color: rgb(126, 126, 126);
+    border-width: 1px;
+    border-radius: 20px;
+    border-style: solid;
+
+    font-family: 'Paytone', 'Gill Sans', 'Gill Sans', 'Gill Sans MT', sans-serif;
+    color: rgb(126, 126, 126);
 }
 
 .footer {
-    background-color: #ff6648;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #FF6648;
 }
 
-.footer-text {
-    background-color: #ff6648;
+.footerText {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+
+    background-color: #FF6648;
+
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
 }
