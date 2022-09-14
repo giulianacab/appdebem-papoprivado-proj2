@@ -23,7 +23,7 @@ export function SignUp () {
     // endereço: { rua: "", n: 0, CEP: 40000000 },
   });
   return (
-    <div className="App">
+    <div classNameName="App">
       <Form
         form={form}
         setForm={setForm}

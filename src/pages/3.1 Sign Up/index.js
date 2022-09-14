@@ -26,7 +26,7 @@ export function Form(props) {
           onChange={handleChange}
           name="username"
         />
-        <button onClick={handleAddUsers} className="btn btn-primary">
+        <button onClick={handleAddUsers} classNameName="btn btn-primary">
           Continuar
         </button>
       </form>

@@ -37,11 +37,12 @@ export function Form(props) {
         value={form.comment}
         onChange={handleChange}
       />
+
     
         <button onClick={handleAddComment} className="btn btn-primary">
           Comentar
         </button>
-   
+
     </form>
   );
 }
