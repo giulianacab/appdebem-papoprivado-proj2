@@ -10,12 +10,16 @@
     * - Author          : NOTE-VINICIUS
     * - Modification    : 
 **/
+import { useState } from "react";
+import { Form } from "../../Form";
 import "./style.module.css";
-// import { FormLogin } from '../../FormLogin'
 
 export function Login() {
+    const [form, setForm] = useState({});
+
+
     return (
-        <>
+        <>    
 
         <div className="header">
             <img src="/" className="logo"/>
@@ -24,6 +28,18 @@ export function Login() {
         <div className="login-form">
             <h3>Faça seu login</h3>
             {/* <FormLogin /> */}
+
+            <form>
+      <label htmlFor="comment">Email</label>
+      <input/>     
+    </form>
+
+    <form>
+      <label htmlFor="comment">Senha</label>
+      <input/>     
+    </form>
+
+    <button>Entrar</button>
             <p className="register">Ainda não é cadastrada? Clique aqui</p>
         </div>
 

@@ -2,25 +2,41 @@
     * @description      : 
     * @author           : NOTE-VINICIUS
     * @group            : 
-    * @created          : 13/09/2022 - 18:16:37
+    * @created          : 14/09/2022 - 17:02:32
     * 
     * MODIFICATION LOG
     * - Version         : 1.0.0
-    * - Date            : 13/09/2022
+    * - Date            : 14/09/2022
     * - Author          : NOTE-VINICIUS
     * - Modification    : 
 **/
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export function Form(props) {
-  const [form, setForm] = useState({
-    comment: ""
-  });
+  const [form, setForm] = useState({});
 
+  useEffect(() => {
+    async function addComments() {
+      try {
+        const response = await axios({
+          method: "post",
+          url: "https://ironrest.herokuapp.com/6321fd684bf6cd00178ada7f",
+          data: {
+            username: "teste1",
+            comment: "Teste"
+          }
+        });
+        setForm([...response.data]);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    addComments();
+  }, []);
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
-
   function handleAddComment(e) {
     e.preventDefault();
 
@@ -38,32 +54,9 @@ export function Form(props) {
         onChange={handleChange}
       />
 
-    
-        <button onClick={handleAddComment} className="btn btn-primary">
-          Comentar
-        </button>
-
+      <button onClick={handleAddComment} className="btn btn-primary">
+        Comentar
+      </button>
     </form>
   );
 }
-
-
-
-
-// useEffect(() => {
-//   async function fetchTips() {
-//     try {
-//       const response = await axios({method: "post",
-//         url: "https://ironrest.herokuapp.com/irontips", 
-//         data: {  username : "teste1",
-//         comment : "Teste"}
-//       }
-//       );
-
-//       setTips([...response.data]);
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   }
-//   fetchTips();
-// }, []);
