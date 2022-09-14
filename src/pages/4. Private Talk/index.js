@@ -9,7 +9,6 @@ import { Communities } from '../../components/Communities';
 // import Navbar from '../../components/Navbar';
 
 
-
 export function PrivateTalk () {
 
     return (
@@ -29,7 +28,7 @@ export function PrivateTalk () {
 
         <header>
             <div className={style.header}>
-                <img src='../../components/ProfilePic/ProfilePic-Giu.png' className={style.profilePic}></img>
+                <img src='../../components/ProfilePic/ProfilePic-Giu.png' className={style.profilePic} alt='Foto de perfil da usuária'></img>
                 <p className={style.openWindow}>PAPO PRIVADO</p>
                 <p className={style.nameAndLastName}>Giuliana Cabral</p>
                 <img src='../../Wavy Design.svg' className={style.wavyBorder} />
