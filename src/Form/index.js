@@ -1,17 +1,7 @@
-/**
-    * @description      : 
-    * @author           : NOTE-VINICIUS
-    * @group            : 
-    * @created          : 14/09/2022 - 17:02:32
-    * 
-    * MODIFICATION LOG
-    * - Version         : 1.0.0
-    * - Date            : 14/09/2022
-    * - Author          : NOTE-VINICIUS
-    * - Modification    : 
-**/
 import { useEffect, useState } from "react";
 import axios from "axios";
+import style from '../pages/style.css';
+
 
 export function Form(props) {
   const [form, setForm] = useState({});
@@ -50,9 +40,9 @@ export function Form(props) {
   }
 
   return (
-    <form onSubmit={handleAddComment}>
-      <label htmlFor="comment">Comente aqui:</label>
-      <input
+    <form onSubmit={handleAddComment} className={style.formComments}>
+      <label htmlFor="comment" className={style.label}></label>
+      <input placeholder="Comente aqui:" className={style.placeholder}
         id="user-comment"
         type="text"
         name="comment"
@@ -60,7 +50,7 @@ export function Form(props) {
         onChange={handleChange}
       />
 
-      <button onClick={handleAddComment} disabled={isLoading} className="btn btn-primary">
+      <button className={style.buttonComments} onClick={handleAddComment} disabled={isLoading}>
         Comentar
       </button>
     </form>

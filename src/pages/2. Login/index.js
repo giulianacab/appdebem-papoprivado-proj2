@@ -19,14 +19,15 @@ export function Login() {
 
     return (
         <>
-            <div className={style.body}>
+            <body>
                 <div className={style.header}>
                     <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" alt="imagem" className={style.logo} />
                 </div>
+            </body>
 
                 <div className={style.loginForm}>
                     <h3>Faça seu login</h3>
-                    <h6>Vamos juntas ficar de bem com nós mesmas?</h6>
+                    <h5>Vamos juntas ficar de bem com nós mesmas?</h5>
                     {/* <FormLogin /> */}
 
                     <form>
@@ -40,9 +41,9 @@ export function Login() {
                     </form>
 
                     <button className={style.button} onClick={() => (window.location.href = '/privatetalk')}>ENTRAR!</button>
-                    <p className={style.register}>Ainda não é cadastrada?<a href="/username">Clique aqui!</a></p>
+                    <h6 className={style.register}>Ainda não é cadastrada?<a href="/username">Clique aqui!</a></h6>
                 </div>
-            </div>
+            
 
             {/* <div className={style.loginForm}>
         <h3>Faça seu login</h3>
@@ -63,11 +64,11 @@ export function Login() {
 
             {/* <button onClick={() => (window.location.href = '/privatetalk')}>Entrar</button> */}
             {/* <p className="register">Ainda não é cadastrada? <a href="/signup">Clique aqui!</a> </p> */}
-        <div className={style.footer}>
-            <p className={style.footerText}>
-                Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
-            </p>
-        </div>
+            <div className={style.footerInicial}>
+                <p>
+                    Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
+                </p>
+            </div>
         </>
     )
 }
