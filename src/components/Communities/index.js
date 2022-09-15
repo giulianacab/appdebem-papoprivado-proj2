@@ -12,19 +12,60 @@
 **/
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./style.module.css";
+import style from "./style.communities.css";
 
 export function Communities() {
   return (
     <div className={style.cardDeck}>
-      <div className={style.card}>
-        <img className={style.cardImgTop} src="..." alt="Card cap" />
-        <div className={style.cardBody}>
-          <h5 className={style.cardTitle}>Card title 1</h5>
+      <Link to={"/comments"}>
+        <div className={style.card}>
+          <img className={style.cardImgTop} src="..." alt="Card cap" />
+          <div className={style.cardBody}>
+            <h5 className={style.cardTitle}>Card title 1</h5>
+          </div>
         </div>
-      </div>
-
-        <Link>
+      </Link>
+      <Link to={"/comments"}>
+        <div className={style.card}>
+          <img className={style.cardImgTop} src="..." alt="Card cap" />
+          <div className={style.cardBody}>
+            <h5 className={style.cardTitle}>Card title 1</h5>
+          </div>
+        </div>
+      </Link>
+      <Link to={"/comments"}>
+        <div className={style.card}>
+          <img className={style.cardImgTop} src="..." alt="Card cap" />
+          <div className={style.cardBody}>
+            <h5 className={style.cardTitle}>Card title 1</h5>
+          </div>
+        </div>
+      </Link>
+      <Link to={"/comments"}>
+        <div className={style.card}>
+          <img className={style.cardImgTop} src="..." alt="Card cap" />
+          <div className={style.cardBody}>
+            <h5 className={style.cardTitle}>Card title 1</h5>
+          </div>
+        </div>
+      </Link>
+      <Link to={"/comments"}>
+        <div className={style.card}>
+          <img className={style.cardImgTop} src="..." alt="Card cap" />
+          <div className={style.cardBody}>
+            <h5 className={style.cardTitle}>Card title 1</h5>
+          </div>
+        </div>
+      </Link>
+      <Link to={"/comments"}>
+        <div className={style.card}>
+          <img className={style.cardImgTop} src="..." alt="Card cap" />
+          <div className={style.cardBody}>
+            <h5 className={style.cardTitle}>Card title 1</h5>
+          </div>
+        </div>
+      </Link>
+      <Link to={"/comments"}>
       <div className={style.card}>
         <img className={style.cardImgTop} src="..." alt="Card cap" />
         <div className={style.cardBody}>
@@ -32,48 +73,14 @@ export function Communities() {
         </div>
       </div>
       </Link>
-
+      <Link to={"/comments"}>
       <div className={style.card}>
         <img className={style.cardImgTop} src="..." alt="Card cap" />
         <div className={style.cardBody}>
           <h5 className={style.cardTitle}>Card title 1</h5>
         </div>
       </div>
-
-      <div className={style.card}>
-        <img className={style.cardImgTop} src="..." alt="Card cap" />
-        <div className={style.cardBody}>
-          <h5 className={style.cardTitle}>Card title 1</h5>
-        </div>
-      </div>
-
-      <div className={style.card}>
-        <img className={style.cardImgTop} src="..." alt="Card cap" />
-        <div className={style.cardBody}>
-          <h5 className={style.cardTitle}>Card title 1</h5>
-        </div>
-      </div>
-
-      <div className={style.card}>
-        <img className={style.cardImgTop} src="..." alt="Card cap" />
-        <div className={style.cardBody}>
-          <h5 className={style.cardTitle}>Card title 1</h5>
-        </div>
-      </div>
-
-      <div className={style.card}>
-        <img className={style.cardImgTop} src="..." alt="Card cap" />
-        <div className={style.cardBody}>
-          <h5 className={style.cardTitle}>Card title 1</h5>
-        </div>
-      </div>
-
-      <div className={style.card}>
-        <img className={style.cardImgTop} src="..." alt="Card cap" />
-        <div className={style.cardBody}>
-          <h5 className={style.cardTitle}>Card title 1</h5>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 }

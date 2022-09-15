@@ -2,7 +2,7 @@
     * @description      : 
     * @author           : NOTE-VINICIUS
     * @group            : 
-    * @created          : 15/09/2022 - 11:04:11
+    * @created          : 15/09/2022 - 12:04:02
     * 
     * MODIFICATION LOG
     * - Version         : 1.0.0
@@ -10,9 +10,7 @@
     * - Author          : NOTE-VINICIUS
     * - Modification    : 
 **/
-import { useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
-import style from './style.module.css';
+import style from '../style.css';
 
 
 export function Loading () {
