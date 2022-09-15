@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export function Loading () {
     const navigate = useNavigate()
 useEffect(() => {
-setTimeout(() => {navigate ("/login")}, 3000)
+setTimeout(() => {navigate ("/login")}, 6000)
 }, [])
 
 
