@@ -12,7 +12,7 @@
 **/
 // Tela de cadastro completo
 import { useState } from "react";
-import './style.module.css';
+import style from '../style.css';
 import  usersList  from "../../data"
 
 
@@ -35,27 +35,48 @@ export function SignUp () {
     // endereço: { rua: "", n: 0, CEP: 40000000 },
   });
   return (
-    <div className="App">
-      <h1>SignUp</h1>
-      <form>
-      <label htmlFor="Nome">Nome</label>
-      <input/>     
-    </form>
+    <>
+      <div className={style.body}>
 
-    <form>
-      <label htmlFor="Sobrenome">Sobrenome</label>
-      <input/>     
-    </form>
-    <form>
-      <label htmlFor="Email">Email</label>
-      <input/>     
-    </form>
+        <div className={style.header}>
+          <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" alt="imagem" className={style.logo} />
+        </div>
 
-    <form>
-      <label htmlFor="Senha">Senha</label>
-      <input/>     
-    </form>
-    <button onClick={() => (window.location.href = '/privatetalk')}>Cadastrar</button>
-    </div>
+          
+          <h3>Faça seu cadastro!</h3>
+          <h6>Não se preocupe: nossa plataforma é completamente segura e ninguém terá acesso aos seus dados.</h6>
+        
+        <div className={style.loginForm}>
+          <form>
+            <label htmlFor="Nome" className={style.label}></label>
+            <input placeholder="Nome" className={style.placeholder}></input>
+          </form>
+
+          <form>
+            <label htmlFor="Sobrenome" className={style.label}></label>
+            <input placeholder="Sobrenome" className={style.placeholder}></input>
+          </form>
+
+          <form>
+            <label htmlFor="Email" className={style.label}></label>
+            <input placeholder="E-mail" className={style.placeholder}></input>
+          </form>
+
+          <form>
+            <label htmlFor="Senha" className={style.label}></label>
+            <input placeholder="Senha" className={style.placeholder}></input>
+          </form>
+
+          <button className={style.button} onClick={() => (window.location.href = '/privatetalk')}>Cadastrar</button>
+        </div>
+      </div>
+
+      <div className={style.footer}>
+          <p className={style.footerText}>
+              Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
+          </p>
+      </div>
+      
+    </>
   );
   }

@@ -1,16 +1,18 @@
+/* HEADER */
+
 .headerTop {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     position: fixed;
+    flex-direction:column;
+    justify-content:center;
 
     width: 100%;
-    top: 0;
 
     background-color: #ff6648;
 }
 
 .configIcon {
+    display: flex;
     position: fixed;
     top: 30px;
     right: 0px;
@@ -25,9 +27,9 @@
 
 header {
     display: flex;
+    position: fixed;
     flex-direction:column;
     justify-content:center;
-    position: fixed;
 
     padding: 30px;
     background-color: #ff6648;
@@ -63,9 +65,9 @@ header {
     position: fixed;
     right: 30%;
     top: 120px;
-
+    font-family: 'Paytone One', sans-serif;
     font-size: 25px;
-    font-family: 'Paytone';
+    font-family:
 }
 
 
@@ -77,8 +79,11 @@ header {
     top:270px;
 
     background-color: white;
-
 }
+
+
+
+/* COMUNIDADES */
 
 section {
     background-color: white;
@@ -91,6 +96,10 @@ section {
 
     background-color: white;
 }
+
+
+
+/* FOOTER */
 
 .footer {
     display: flex;

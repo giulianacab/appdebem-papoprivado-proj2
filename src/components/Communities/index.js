@@ -11,7 +11,7 @@
     * - Modification    : 
 **/
 import React from "react";
-import style from "./style.module.css";
+import style from "./style.communities.css";
 
 export function Communities() {
   return (
