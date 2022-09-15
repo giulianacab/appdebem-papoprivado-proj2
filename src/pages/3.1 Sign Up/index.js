@@ -38,7 +38,7 @@ export function Form(props) {
     <div className={style.body}>
       <div className={style.loginForm}>
         <h3>Faça seu cadastro</h3>
-        <h6>Você pode usar um nome de usuário aleatório caso queira permanecer anônima</h6>
+        <h5>Você pode usar um nome de usuário aleatório caso queira permanecer anônima</h5>
       
         <form>
           <label></label>
@@ -57,12 +57,12 @@ export function Form(props) {
       </div>
 
 {/* Colocar link da tela de login no "Entre aqui" */}        
-      <p>Já tem uma conta? <a>Entre aqui!</a></p>
+      <h5 className={style.register}>Já tem uma conta? <a>Entre aqui!</a></h5>
     </div>
 
 
     <div className={style.footer}>
-        <p className={style.footerText}>
+        <p>
             Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
         </p>
     </div>

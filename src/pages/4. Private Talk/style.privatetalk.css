@@ -1,4 +1,4 @@
-/* HEADER */
+/* HEADER
 
 .headerTop {
     display: flex;
@@ -83,7 +83,6 @@ header {
 
 
 
-/* COMUNIDADES */
 
 section {
     background-color: white;
@@ -99,7 +98,6 @@ section {
 
 
 
-/* FOOTER */
 
 .footer {
     display: flex;
