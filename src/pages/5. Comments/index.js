@@ -12,7 +12,8 @@
 **/
 import style from '../style.css';
 import {Form} from "../../Form/index"   
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 import usersList  from '../../data';
 
 
@@ -30,10 +31,49 @@ export function Comments() {
     comment: ""
   });
 
+const [comments, setComments] = useState([])
+ const[showEditInput, setShowEditInput] = useState(false)
 
-  
+ function deleteProject(currentComment) {                    
+      axios
+        .delete(`https://ironrest.herokuapp.com/appdebem-comments/${currentComment._id}`)
+        .then(() => {
+          window.location.reload();
+        })
+        .catch((err) => console.log(err));
+    };  
+
+ function showInput(id) {
+    setShowEditInput(id)
+ }
+useEffect(() => {
+    axios({
+            method: "get",
+            url: "https://ironrest.herokuapp.com/appdebem-comments",       
+          }).then((response) => {setComments(response.data);}).catch((err) => err)
+        
+}, [])
     return (
         <>
+        {comments.map((currentComment)=> {
+         if (showEditInput === false || showEditInput !== currentComment._id) {
+            return <>
+            <p>{currentComment.comment}</p>
+            <button onClick={() => {
+                showInput(currentComment._id)
+            }}>Editar</button>
+            <button onClick={() => {
+                deleteProject(currentComment._id)
+                }}>Deletar</button>
+            </>
+         } else {
+            return<>
+            <input value={currentComment.comment}/>
+            <button>Salvar Comentário</button>
+            </>
+        
+         }
+        })}
         <div className={style.headerTop}>
             <img src='/' className={style.iconConfig}></img>
         </div>

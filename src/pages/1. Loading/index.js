@@ -11,9 +11,15 @@
     * - Modification    : 
 **/
 import style from '../style.css';
-
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export function Loading () {
+    const navigate = useNavigate()
+useEffect(() => {
+setTimeout(() => {navigate ("/login")}, 3000)
+}, [])
+
 
     
     return (
