@@ -1,6 +1,6 @@
-import style from './style.module.css';
+import style from '../style.css';
 // import { Form } from "../../Form/index"   
-import { Communities } from '../../components/Communities';
+import { Communities } from '../../components/Communities/index';
 // import {CommunitiesList} from '../../App'
 // import { useState } from 'react';
 // import HeaderTop from '../../components/HeaderTop';
@@ -26,14 +26,12 @@ export function PrivateTalk () {
 
 {/* HEADER C/ NOME E FOTO */}
 
-        <header>
-            <div className={style.header}>
+            <header>
                 <img src='../../components/ProfilePic/ProfilePic-Giu.png' className={style.profilePic} alt='Foto de perfil da usuária'></img>
                 <p className={style.openWindow}>PAPO PRIVADO</p>
                 <p className={style.nameAndLastName}>Giuliana Cabral</p>
                 <img src='../../Wavy Design.svg' className={style.wavyBorder} />
-            </div>
-        </header>
+            </header>
 
 
 
