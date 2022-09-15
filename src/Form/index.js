@@ -12,31 +12,31 @@
 **/
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 export function Form(props) {
   const [form, setForm] = useState({});
-  const [isLoading, setIsLoading] = useState(false)
-
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
   async function addComments() {
     try {
-      setIsLoading(true)
+      setIsLoading(true);
       if (form.comment) {
         const response = await axios({
           method: "post",
-          url: "https://ironrest.herokuapp.com/6321fd684bf6cd00178ada7f",
+          url: "https://ironrest.herokuapp.com/appdebem-comments",
           data: {
             username: "teste1",
             comment: form.comment
           }
-
         });
-        window.location.href = '/editcomments'
+        window.location.reload();
         setForm([...response.data]);
-        
-        setIsLoading(false)
+
+        setIsLoading(false);
       }
     } catch (err) {
-      setIsLoading(false)
+      setIsLoading(false);
     }
   }
 
@@ -60,7 +60,11 @@ export function Form(props) {
         onChange={handleChange}
       />
 
-      <button onClick={handleAddComment} disabled={isLoading} className="btn btn-primary">
+      <button
+        onClick={handleAddComment}
+        disabled={isLoading}
+        className="btn btn-primary"
+      >
         Comentar
       </button>
     </form>
