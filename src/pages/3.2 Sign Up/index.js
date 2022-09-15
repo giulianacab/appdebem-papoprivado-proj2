@@ -1,11 +1,23 @@
+/**
+    * @description      : 
+    * @author           : NOTE-VINICIUS
+    * @group            : 
+    * @created          : 14/09/2022 - 21:29:13
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 14/09/2022
+    * - Author          : NOTE-VINICIUS
+    * - Modification    : 
+**/
 // Tela de cadastro completo
 import { useState } from "react";
-import { Form } from "../3.1 Sign Up";
 import './style.module.css';
+import  usersList  from "../../data"
 
 
 export function SignUp () {
-    const [usersList, setUsersList] = useState(
+    const [userList, setUserList] = useState(
       usersList.map((currentUser) => {
         return {
           username: currentUser.username,
@@ -24,12 +36,26 @@ export function SignUp () {
   });
   return (
     <div className="App">
-      <Form
-        form={form}
-        setForm={setForm}
-        setMovieList={setUsersList}
-        movieList={usersList}
-      />
+      <h1>SignUp</h1>
+      <form>
+      <label htmlFor="Nome">Nome</label>
+      <input/>     
+    </form>
+
+    <form>
+      <label htmlFor="Sobrenome">Sobrenome</label>
+      <input/>     
+    </form>
+    <form>
+      <label htmlFor="Email">Email</label>
+      <input/>     
+    </form>
+
+    <form>
+      <label htmlFor="Senha">Senha</label>
+      <input/>     
+    </form>
+    <button onClick={() => (window.location.href = '/privatetalk')}>Cadastrar</button>
     </div>
   );
   }
