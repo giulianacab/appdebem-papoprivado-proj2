@@ -36,23 +36,25 @@ export function Form(props) {
 
 
     <div className={style.body}>
-      <h3>Faça seu cadastro</h3>
-      <h6>Você pode usar um nome de usuário aleatório caso queira permanecer anônima</h6>
+      <div className={style.loginForm}>
+        <h3>Faça seu cadastro</h3>
+        <h6>Você pode usar um nome de usuário aleatório caso queira permanecer anônima</h6>
       
-      <form>
-        <label></label>
-        <input
-          placeholder="Nome de usuário"
-          // id="username"
-          type="text"
-          // onChange={handleChange}
-          // name="username"
-        />      
-      </form>
+        <form>
+          <label></label>
+          <input
+            placeholder="Nome de usuário"
+            // id="username"
+            type="text"
+            // onChange={handleChange}
+            // name="username"
+          />      
+        </form>
 
-      <button onClick={() => (window.location.href = '/signup')} className={style.button} >
-          Continuar
-      </button>
+        <button onClick={() => (window.location.href = '/signup')} className={style.button} >
+            Continuar
+        </button>
+      </div>
 
 {/* Colocar link da tela de login no "Entre aqui" */}        
       <p>Já tem uma conta? <a>Entre aqui!</a></p>
