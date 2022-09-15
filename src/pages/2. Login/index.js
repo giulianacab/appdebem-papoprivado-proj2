@@ -60,7 +60,7 @@ export function Login() {
     </form>
 
     <button onClick={() => (window.location.href = '/privatetalk')}>Entrar</button>
-            <p className="register">Ainda não é cadastrada? <a href="/signup">Clique aqui</a> </p>
+            <p className="register">Ainda não é cadastrada? <a href="/signup">Clique aqui!</a> </p>
         </div>
 
         <div className={style.footer}>
