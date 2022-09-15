@@ -13,10 +13,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import style from '../style.css';
-
-
-
 import { useNavigate, useParams } from "react-router-dom";
+
+
 
 // const API_URL = "";
 
