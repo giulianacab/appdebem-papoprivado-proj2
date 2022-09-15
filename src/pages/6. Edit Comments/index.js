@@ -52,15 +52,15 @@ export function EditComments() {
     <>
     {form.length > 0 ? form.map(comment =>
     { return( <><input value={editComment} onChange={(e) => {setEditComment(e.target.value)}}></input>
-    <button className={style.button} onClick={() => handleDelete(comment._id)}>Deletar</button>
+    <button className={style.buttonComments} onClick={() => handleDelete(comment._id)}>Deletar</button>
 
     <Link to={""}>
-    <button className={style.button} onClick={() => handleEdit(comment._id, editComment)}>Salvar Edição</button>
+    <button className={style.buttonComments} onClick={() => handleEdit(comment._id, editComment)}>Salvar Edição</button>
     </Link>
     
     </>)}
-    ): <h1>Nenhum comentário</h1>}
-    <button className={style.button} onClick={() => {window.location.href = '/comments'}}>Voltar</button>
+    ): <h3>Nenhum comentário</h3>}
+    <button className={style.buttonComments} onClick={() => {window.location.href = '/comments'}}>Voltar</button>
     
 
     {/* FOOTER / NAVBAR */}
