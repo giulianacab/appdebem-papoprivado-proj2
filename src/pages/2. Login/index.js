@@ -14,6 +14,7 @@ import { useState } from "react";
 import { Form } from "../../Form";
 import style from"./style.module.css";
 
+
 export function Login() {
     const [form, setForm] = useState({});
 
@@ -39,8 +40,8 @@ export function Login() {
       <input/>     
     </form>
 
-    <button navigate={"/loading"}>Entrar</button>
-            <p className="register">Ainda não é cadastrada? Clique aqui</p>
+    <button onClick={() => (window.location.href = '/privatetalk')}>Entrar</button>
+            <p className="register">Ainda não é cadastrada? <a href="/signup">Clique aqui</a> </p>
         </div>
 
         <div className={style.footer}>

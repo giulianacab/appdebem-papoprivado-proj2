@@ -15,31 +15,37 @@ import axios from "axios";
 
 export function Form(props) {
   const [form, setForm] = useState({});
+  const [isLoading, setIsLoading] = useState(false)
 
-  useEffect(() => {
-    async function addComments() {
-      try {
+  async function addComments() {
+    try {
+      setIsLoading(true)
+      if (form.comment) {
         const response = await axios({
           method: "post",
           url: "https://ironrest.herokuapp.com/6321fd684bf6cd00178ada7f",
           data: {
             username: "teste1",
-            comment: "Teste"
+            comment: form.comment
           }
+
         });
+        window.location.href = '/editcomments'
         setForm([...response.data]);
-      } catch (err) {
-        console.log(err);
+        
+        setIsLoading(false)
       }
+    } catch (err) {
+      setIsLoading(false)
     }
-    addComments();
-  }, []);
+  }
+
   function handleChange(e) {
     setForm({ ...form, [e.target.name]: e.target.value });
   }
   function handleAddComment(e) {
     e.preventDefault();
-
+    addComments();
     props.attList([form, ...props.comment]);
   }
 
@@ -54,7 +60,7 @@ export function Form(props) {
         onChange={handleChange}
       />
 
-      <button onClick={handleAddComment} className="btn btn-primary">
+      <button onClick={handleAddComment} disabled={isLoading} className="btn btn-primary">
         Comentar
       </button>
     </form>

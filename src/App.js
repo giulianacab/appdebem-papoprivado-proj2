@@ -18,11 +18,7 @@ import { Form } from "./pages/3.1 Sign Up";
 import { SignUp } from "./pages/3.2 Sign Up";
 import { PrivateTalk } from "./pages/4. Private Talk";
 import { Comments } from "./pages/5. Comments";
-// import HeaderTop from "./components/HeaderTop";
-// import Header from "./components/Header";
-// import Body from "./components/Body";
-// import Navbar from "./components/Navbar";
-// import { Communities } from "./components/Communities";
+import { EditComments } from "./pages/6. Edit Comments";
 
 export default function App() {
     return (
@@ -30,10 +26,12 @@ export default function App() {
         <Routes>
           <Route path="/loading" element={<Loading />} />
           <Route path="/login" element={<Login/>}/>
+          <Route path="*" element={<Login/>}/>
           <Route path="/username" element={<Form />} /> 
           <Route path="/signup" element={<SignUp />} />
           <Route path="/privatetalk" element={<PrivateTalk />} />
           <Route path="/comments" element={<Comments />} />
+          <Route path="/editcomments" element={<EditComments />} />
         </Routes>
       </>
     )
