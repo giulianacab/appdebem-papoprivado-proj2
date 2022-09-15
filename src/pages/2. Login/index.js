@@ -10,20 +10,18 @@
     * - Author          : NOTE-VINICIUS
     * - Modification    : 
 **/
-import { useState } from "react";
-import { Form } from "../../Form";
+
 import style from"./style.module.css";
 
 
 export function Login() {
-    const [form, setForm] = useState({});
 
 
     return (
         <>    
         <div className={style.body}>
             <div className={style.header}>
-                <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" className={style.logo}/>
+                <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" alt="imagem" className={style.logo}/>
             </div>
 
             <div className={style.loginForm}>
@@ -40,8 +38,8 @@ export function Login() {
                     <input placeholder="Senha" className={style.placeholder}/>     
                 </form>
 
-                <button navigate={"/loading"}>ENTRAR!</button>
-                    <p className={style.register}>Ainda não é cadastrada? Clique aqui</p>
+                <button onClick={() => (window.location.href = '/privatetalk')}>ENTRAR!</button>
+                    <p className={style.register}>Ainda não é cadastrada? <a href="/username">Clique aqui!</a></p>
             </div>
         </div>
 
@@ -59,8 +57,8 @@ export function Login() {
       <input/>     
     </form>
 
-    <button onClick={() => (window.location.href = '/privatetalk')}>Entrar</button>
-            <p className="register">Ainda não é cadastrada? <a href="/signup">Clique aqui!</a> </p>
+    {/* <button onClick={() => (window.location.href = '/privatetalk')}>Entrar</button> */}
+            {/* <p className="register">Ainda não é cadastrada? <a href="/signup">Clique aqui!</a> </p> */}
         </div>
 
         <div className={style.footer}>
