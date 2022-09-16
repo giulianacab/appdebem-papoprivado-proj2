@@ -60,6 +60,8 @@ export function PrivateTalk () {
 
 {/* CARDS */}
             <article>
+
+                
                 <div className={style.flexContainer}>
 
                     <div className={style.row1}>
