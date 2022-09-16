@@ -28,18 +28,16 @@ export function Form(props) {
   // }
   return (
     <>
-    <div className={style.header}>
+    <body>
       <div>
           <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" className={style.logoLoading}/>
       </div>
-    </div>
+    </body>
 
-
-    <div className={style.body}>
       <div className={style.loginForm}>
         <h3>Faça seu cadastro</h3>
         <h5>Você pode usar um nome de usuário aleatório caso queira permanecer anônima</h5>
-      
+    
         <form>
           <label></label>
           <input
@@ -54,18 +52,18 @@ export function Form(props) {
         <button onClick={() => (window.location.href = '/signup')} className={style.button} >
             Continuar
         </button>
+      
+        <h5 className={style.register}>Já tem uma conta?</h5>
+        <br></br>
+        <h5><a href="/login">Entre aqui!</a></h5>
       </div>
 
-{/* Colocar link da tela de login no "Entre aqui" */}        
-      <h5 className={style.register}>Já tem uma conta? <a>Entre aqui!</a></h5>
-    </div>
 
-
-    <div className={style.footer}>
-        <p>
-            Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
-        </p>
-    </div>
+      <div className={style.footer}>
+          <p>
+              Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
+          </p>
+      </div>
 
     </>
   );
