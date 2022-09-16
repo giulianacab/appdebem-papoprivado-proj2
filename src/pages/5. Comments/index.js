@@ -2,11 +2,11 @@
     * @description      : 
     * @author           : NOTE-VINICIUS
     * @group            : 
-    * @created          : 15/09/2022 - 21:11:59
+    * @created          : 16/09/2022 - 11:05:02
     * 
     * MODIFICATION LOG
     * - Version         : 1.0.0
-    * - Date            : 15/09/2022
+    * - Date            : 16/09/2022
     * - Author          : NOTE-VINICIUS
     * - Modification    : 
 **/
@@ -21,7 +21,6 @@ import { ProfilePic } from '../../components/ProfilePic';
 import { ConfigIcon } from '../../components/Config. Icon';
 import { Link } from 'react-router-dom';
 
-const API_URL = "https://ironrest.herokuapp.com/appdebem-comments"
 
 export function Comments() {
 
@@ -33,23 +32,14 @@ export function Comments() {
     })
   );
 
-  
-
   const [form, setForm] = useState({
     comment: ""
   });
 
 const [comments, setComments] = useState([])
  const[showEditInput, setShowEditInput] = useState(false)
- 
 
-
- const editProject = (currentComment) => {
-    axios
-    .put(`https://ironrest.herokuapp.com/appdebem-comments/${currentComment._id}`, editProject)
- }
-
- const deleteProject = (currentComment) => {                    
+ function deleteProject(currentComment) {                    
       axios
         .delete(`https://ironrest.herokuapp.com/appdebem-comments/${currentComment._id}`)
         .then(() => {
@@ -61,8 +51,6 @@ const [comments, setComments] = useState([])
  function showInput(id) {
     setShowEditInput(id)
  }
-
- 
 useEffect(() => {
     axios({
             method: "get",
@@ -72,15 +60,13 @@ useEffect(() => {
 }, [])
     return (
         <>
-        {comments.map((currentComment)=> {
+        {/* {comments.map((currentComment)=> {
          if (showEditInput === false || showEditInput !== currentComment._id) {
             return <>
             <p>{currentComment.comment}</p>
             <button onClick={() => {
                 showInput(currentComment._id)
             }}>Editar</button>
-
-
             <button onClick={() => {
                 deleteProject(currentComment._id)
                 }}>Deletar</button>
@@ -88,11 +74,11 @@ useEffect(() => {
          } else {
             return<>
             <input value={currentComment.comment}/>
-            <button onClick={editProject()}>Salvar Comentário</button>
+            <button>Salvar Comentário</button>
             </>
         
          }
-        })}
+        })} */}
 
 
 {/* HEADER C/ CONFIG */}
