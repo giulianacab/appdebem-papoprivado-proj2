@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : NOTE-VINICIUS
+    * @group            : 
+    * @created          : 15/09/2022 - 21:11:59
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 15/09/2022
+    * - Author          : NOTE-VINICIUS
+    * - Modification    : 
+**/
 import style from '../style.css';
 import {Form} from "../../Form/index"   
 import { useState, useEffect } from 'react';
@@ -27,7 +39,7 @@ export function Comments() {
 const [comments, setComments] = useState([])
  const[showEditInput, setShowEditInput] = useState(false)
 
- function deleteProject(currentComment) {                    
+ const deleteProject = (currentComment) => {                    
       axios
         .delete(`https://ironrest.herokuapp.com/appdebem-comments/${currentComment._id}`)
         .then(() => {
