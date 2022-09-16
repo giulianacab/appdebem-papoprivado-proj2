@@ -30,27 +30,29 @@ export function PrivateTalk () {
 
 
 {/* HEADER C/ CONFIG */}
-
-        <div className={style.headerTop}>
-            {/* <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"  viewBox="0 0 16 16" className={style.configIcon}>
-                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
-            </svg> */}
-            <ConfigIcon />
-        </div>
+        <head>
+            <div className={style.headerTop}>
+                {/* <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white"  viewBox="0 0 16 16" className={style.configIcon}>
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                </svg> */}
+                <ConfigIcon className={style.ConfigIcon}/>
+            </div>
+        </head>
 
 
 
 {/* HEADER C/ NOME E FOTO */}
 
-        <header>
-            {/* <div className={style.profilePic}>
-                <img src={profilePic} alt="Foto de perfil da usuária"></img>
-            </div>           */}
-            <ProfilePic />
-            <p className={style.openWindow}>PAPO PRIVADO</p>
-            <p className={style.nameAndLastName}>Giuliana Cabral</p>
-            <img src={wavyBorder} className={style.wavyBorder} />
-        </header>
+        <body>
+            <div className={style.headerPic}>
+                <ProfilePic />
+            </div>
+            <div className={style.headerText}>
+                <h6 className={style.openWindow}>PAPO PRIVADO</h6>
+                <h3 className={style.nameAndLastName}>Giuliana Cabral</h3>
+                {/* <img src={wavyBorder} className={style.wavyBorder} alt="wavy border"/> */}
+            </div>
+        </body>
 
 
 
@@ -60,12 +62,12 @@ export function PrivateTalk () {
             <article>
                 <div className={style.flexContainer}>
 
-                    <div className={style.row}>
+                    <div className={style.row1}>
                         <Link to={"/comments"}>
                             <div className={style.card}>
                             <img className={style.cardImgTop} src={healthLifeImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                                <h5 className={style.cardTitle}>Vida saudável</h5>
+                                <h4 className={style.cardTitle}>Vida saudável</h4>
                             </div>
                             </div>
                         </Link>
@@ -75,18 +77,18 @@ export function PrivateTalk () {
                             <div className={style.card}>
                             <img className={style.cardImgTop} src={sleepImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                                <h5 className={style.cardTitle}>Sono e descanso</h5>
+                                <h4 className={style.cardTitle}>Sono e descanso</h4>
                             </div>
                             </div>
                         </Link>
                     </div>
 
-                    <div className={style.row}>
+                    <div className={style.row2}>
                         <Link to={"/comments"}>
                             <div className={style.card}>
                             <img className={style.cardImgTop} src={mentalHealthImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                                <h5 className={style.cardTitle}>Saúde mental</h5>
+                                <h4 className={style.cardTitle}>Saúde mental</h4>
                             </div>
                             </div>
                         </Link>
@@ -95,18 +97,18 @@ export function PrivateTalk () {
                             <div className={style.card}>
                             <img className={style.cardImgTop} src={emotionalImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                                <h5 className={style.cardTitle}>Inteligência emocional</h5>
+                                <h4 className={style.cardTitle}>Inteligência emocional</h4>
                             </div>
                             </div>
                         </Link>
                     </div>
 
-                    <div className={style.row}>
+                    <div className={style.row3}>
                         <Link to={"/comments"}>
                             <div className={style.card}>
                             <img className={style.cardImgTop} src={sexImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                                <h5 className={style.cardTitle}>Sexo e menstruação</h5>
+                                <h4 className={style.cardTitle}>Sexo e menstruação</h4>
                             </div>
                             </div>
                         </Link>
@@ -115,18 +117,18 @@ export function PrivateTalk () {
                             <div className={style.card}>
                             <img className={style.cardImgTop} src={relationshipImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                                <h5 className={style.cardTitle}>Relacionamentos</h5>
+                                <h4 className={style.cardTitle}>Relacionamentos</h4>
                             </div>
                             </div>
                         </Link>
                     </div>
 
-                    <div className={style.row}>
+                    <div className={style.row4}>
                         <Link to={"/comments"}>
                         <div className={style.card}>
                             <img className={style.cardImgTop} src={anxietyImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                            <h5 className={style.cardTitle}>Ansiedade e depressão</h5>
+                            <h4 className={style.cardTitle}>Ansiedade e depressão</h4>
                             </div>
                         </div>
                         </Link>
@@ -136,7 +138,7 @@ export function PrivateTalk () {
                         <div className={style.card}>
                             <img className={style.cardImgTop} src={bipolarImg} alt="Card cap" />
                             <div className={style.cardBody}>
-                            <h5 className={style.cardTitle}>Apoio ao Transtorno Bipolar</h5>
+                            <h4 className={style.cardTitle}>Apoio ao Transtorno Bipolar</h4>
                             </div>
                         </div>
                         </Link>
