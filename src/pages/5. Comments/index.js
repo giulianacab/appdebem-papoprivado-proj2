@@ -21,6 +21,7 @@ import { ProfilePic } from '../../components/ProfilePic';
 import { ConfigIcon } from '../../components/Config. Icon';
 import { Link } from 'react-router-dom';
 
+const API_URL = "https://ironrest.herokuapp.com/appdebem-comments"
 
 export function Comments() {
 
@@ -38,6 +39,13 @@ export function Comments() {
 
 const [comments, setComments] = useState([])
  const[showEditInput, setShowEditInput] = useState(false)
+ 
+
+
+ const editProject = (currentComment) => {
+    axios
+    .put(`https://ironrest.herokuapp.com/appdebem-comments/${currentComment._id}`, editProject)
+ }
 
  const deleteProject = (currentComment) => {                    
       axios
@@ -51,6 +59,8 @@ const [comments, setComments] = useState([])
  function showInput(id) {
     setShowEditInput(id)
  }
+
+ 
 useEffect(() => {
     axios({
             method: "get",
@@ -60,13 +70,15 @@ useEffect(() => {
 }, [])
     return (
         <>
-        {/* {comments.map((currentComment)=> {
+        {comments.map((currentComment)=> {
          if (showEditInput === false || showEditInput !== currentComment._id) {
             return <>
             <p>{currentComment.comment}</p>
             <button onClick={() => {
                 showInput(currentComment._id)
             }}>Editar</button>
+
+
             <button onClick={() => {
                 deleteProject(currentComment._id)
                 }}>Deletar</button>
@@ -74,11 +86,11 @@ useEffect(() => {
          } else {
             return<>
             <input value={currentComment.comment}/>
-            <button>Salvar Comentário</button>
+            <button onClick={editProject()}>Salvar Comentário</button>
             </>
         
          }
-        })} */}
+        })}
 
 
 {/* HEADER C/ CONFIG */}
