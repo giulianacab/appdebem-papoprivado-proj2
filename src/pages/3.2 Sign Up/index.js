@@ -24,14 +24,17 @@ export function SignUp () {
   });
   return (
     <>
-      <div className={style.body}>
-        
+    <div>
+      <body>
+        <div>
           <img src="https://images2.imgbox.com/f4/44/mSjTeGV2_o.png" alt="imagem" className={style.logo} />
-          
+        </div>
+      </body>
+
+      <div className={style.loginForm}>
           <h3>Faça seu cadastro!</h3>
           <h5>Não se preocupe: nossa plataforma é completamente segura e ninguém terá acesso aos seus dados.</h5>
-        
-        <div className={style.loginForm}>
+      
           <form>
             <label htmlFor="Nome" className={style.label}></label>
             <input placeholder="Nome" className={style.placeholder}></input>
@@ -53,14 +56,14 @@ export function SignUp () {
           </form>
 
           <button className={style.button} onClick={() => (window.location.href = '/privatetalk')}>Cadastrar</button>
-        </div>
       </div>
+    </div>
 
-      <div className={style.footer}>
-          <p>
-              Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
-          </p>
-      </div>
+    <div className={style.footer}>
+      <p>
+          Desenvolvido por Giuliana Cabral e Vinícius Mello – Todos os direitos reservados
+      </p>
+    </div>
       
     </>
   );

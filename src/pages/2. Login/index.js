@@ -40,8 +40,10 @@ export function Login() {
                         <input placeholder="Senha" className={style.placeholder} />
                     </form>
 
-                    <button className={style.button} onClick={() => (window.location.href = '/privatetalk')}>ENTRAR!</button>
-                    <h6 className={style.register}>Ainda não é cadastrada?<a href="/username">Clique aqui!</a></h6>
+                    <button className={style.button} onClick={() => (window.location.href = '/privatetalk')}>E N T R A R !</button>
+                    <h5 className={style.register}>Ainda não é cadastrada? </h5>
+                    <br></br>
+                    <h5><a href="/username"> Clique aqui!</a></h5>
                 </div>
             
 
